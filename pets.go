@@ -12,9 +12,10 @@ import (
 	"github.com/go-chi/chi/v5"
 )
 
-var breedSource = "external"
-
-const dataFilePath = "path/to/breed/data"
+const (
+	breedSource  = "breedSource"
+	dataFilePath = "path/to/breed/data"
+)
 
 // Represents an HTTP REST server for Pet CRUD.
 type PetServer struct {

@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/pjh/bpss/pets"
 )
 
 func main() {

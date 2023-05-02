@@ -9,8 +9,6 @@ import (
 	"os"
 	"time"
 
-	"github.com/abcxyz/pkg/logging"
-	"github.com/abcxyz/pkg/renderer"
 	"github.com/go-chi/chi/v5"
 )
 

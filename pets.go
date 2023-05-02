@@ -1,4 +1,4 @@
-package main
+package pets
 
 import (
 	"context"
@@ -14,10 +14,9 @@ import (
 	"github.com/go-chi/chi/v5"
 )
 
-const (
-	breedSource  = "external"
-	dataFilePath = "path/to/breed/data"
-)
+var breedSource = "external"
+
+const dataFilePath = "path/to/breed/data"
 
 // Represents an HTTP REST server for Pet CRUD.
 type PetServer struct {
@@ -141,11 +140,4 @@ func (s *Server) getBreeds(ctx context.Context) []*Breed {
 	}
 
 	return result
-}
-
-func main() {
-	petServer, err := NewServer(ctx)
-	if err != nil {
-		return fmt.Errorf("failed to create server: %w", err)
-	}
 }
